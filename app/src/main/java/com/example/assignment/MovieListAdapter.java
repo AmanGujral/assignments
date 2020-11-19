@@ -17,7 +17,7 @@ public class MovieListAdapter extends BaseAdapter {
     public MovieListAdapter(ArrayList<ListItemModelClass> list){
         this.list = list;
     }
-    
+
     @Override
     public int getCount() {
         return list.size();
