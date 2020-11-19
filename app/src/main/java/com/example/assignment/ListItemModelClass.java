@@ -8,7 +8,7 @@ public class ListItemModelClass {
     private String imgSrc;
 
     //default constructor
-    ListItemModelClass(String title, String rating, String description, String imgSrc){
+    public ListItemModelClass(String title, String rating, String description, String imgSrc){
         this.title = title;
         this.rating = rating;
         this.description = description;
@@ -16,7 +16,7 @@ public class ListItemModelClass {
     }
 
     //constructor without imgSrc parameter
-    ListItemModelClass(String title, String rating, String description){
+    public ListItemModelClass(String title, String rating, String description){
         this.title = title;
         this.rating = rating;
         this.description = description;
