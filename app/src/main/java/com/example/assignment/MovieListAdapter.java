@@ -40,7 +40,7 @@ public class MovieListAdapter extends BaseAdapter {
         viewHolder.titleTv.setText(list.get(position).getTitle());
         viewHolder.ratingTv.setText(list.get(position).getRating());
         viewHolder.descriptionTv.setText(list.get(position).getDescription());
-        viewHolder.image.setImageResource(Integer.parseInt(list.get(position).getImgSrc()));
+        viewHolder.image.setImageResource(list.get(position).getImgSrc());
 
         return convertView;
     }

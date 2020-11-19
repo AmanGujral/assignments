@@ -5,10 +5,10 @@ public class ListItemModelClass {
     private String title;
     private String rating;
     private String description;
-    private String imgSrc;
+    private int imgSrc;
 
     //default constructor
-    public ListItemModelClass(String title, String rating, String description, String imgSrc){
+    public ListItemModelClass(String title, String rating, String description, int imgSrc){
         this.title = title;
         this.rating = rating;
         this.description = description;
@@ -20,7 +20,7 @@ public class ListItemModelClass {
         this.title = title;
         this.rating = rating;
         this.description = description;
-        this.imgSrc = String.valueOf(R.drawable.default_image);//default image when no image provided
+        this.imgSrc = R.drawable.default_image;//default image when no image provided
     }
 
     public String getTitle() {
@@ -47,11 +47,11 @@ public class ListItemModelClass {
         this.description = description;
     }
 
-    public String getImgSrc() {
+    public int getImgSrc() {
         return imgSrc;
     }
 
-    public void setImgSrc(String imgSrc) {
+    public void setImgSrc(int imgSrc) {
         this.imgSrc = imgSrc;
     }
 }
